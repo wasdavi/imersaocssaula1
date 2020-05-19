@@ -1,0 +1,71 @@
+body{/*body aplico configuração a tudo*/
+  /* background: #40e0d0;*/
+   background-image: url('http://www.vanessametonini.com.br/imersaocss/a1/img/fundo.jpg');
+ /*  background-size: 50px 500px;*/
+   background-size: auto 100vh; /*proporção e 100% para ajustar ao tamanho da tela*/
+   font-family: arial black;
+   heigth: 100vh; /*garante que a altura do body seja sempre a mesma*/
+ }
+ 
+ /*no html insiro class, não usar id, para chamá-la depois, só o que estiver dentro da nav que mudará, ou seja, só quem for do tipo menu, é como se fosse um método em java*/
+ .menu{
+   background-color: white;
+ }
+ 
+ .menu li {/*assim eu altero só os LI dentro das classes menu*/
+   list-style: none;
+ }
+ 
+ .menu ul{
+   display: flex;/*deixa um link do lado do outro*/
+   justify-content: space-around;/*tira espaço entre os links*/
+ }
+ 
+ /*também posso chamar a tag e aplicar a configuração*/
+ 
+ a {/*assim eu altero todos com a tag A mesmos os fora da classe menu*/
+   color: teal;
+   text-decoration: none;/*tira o underline do link*/
+   }
+ 
+ a:hover {/*mostra o underline do link*/
+   text-decoration: underline;
+   color: blue;
+ }
+ 
+ .site-subtitulo, /*assim ponho a mesma config para os 2*/
+ .site-titulo {
+   color: whitesmoke;
+   text-align: center;
+ }
+ 
+ .site-subtitulo {
+   font-style: italic;
+ }
+
+h2,
+h1{
+border: solid 1px orange;/*linha continua*/
+/*border-color: black;
+/*border-width: 1px; espessura da borada*/
+padding: 20px; /*margem do texto para a borda  */
+
+}
+
+h2{
+margin: 50px;/*margem da borda para as laterais*/
+box-shadow:10px 20px 10px 20px black;/*sombra 1º horizontal, 2º vertical, 3º nitidez, 4º dimensão e 5º cor*/
+}
+
+h3{
+margin: 20px;
+border: 4px solid blue;
+padding: 10px;
+width: 100px;
+height: 100px;
+/*box-shadow: 128px 0px 0px 0px red, 0px 128px yellow, 128px 128px green, 0px 256px black;*/
+box-shadow: 100px 0px 0px 0px red, 0px 100px yellow, 100px 100px green, 0px 200px blue;
+box-sizing: border-box;/*com o border-sizing não preciso ficar calculando nº quebrado para ajustar basta por tudo 100% e 200%*/
+}
+ 
+  
